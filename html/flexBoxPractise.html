@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing</title>
+  <link rel="stylesheet" href="sample.css">
+  <style>
+    * {
+      background-color: black;
+      color: white;
+      font-family: cursive;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu {
+      margin: 5px;
+      background-color: burlywood;
+      color: black;
+      display: flex;
+      justify-content: space-evenly;
+      text-decoration: underline;
+    }
+    .imageContainer{
+      height: 400px;
+      width: 98vw;
+      border: solid 2px white ;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container{
+      margin-top: 10px;
+      border: solid 2px rgb(247, 0, 0) ;
+      height:200px ;
+      width: 98vw;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .box{
+      height: 100px;
+      width: 100px;
+      padding: 5px;
+      margin: 5px;
+      border: dotted 2px rgb(255, 255, 255)  ;
+    }
+    #box1{
+      background-color: darkcyan;
+    }
+    #box2{
+      background-color: wheat;
+    }
+    #box3{
+      background-color: violet;
+      flex-grow: 3;
+    }
+    .boxs{
+      margin-top: 10px;
+      height: 100px;
+      width: 100px;
+      background-color: green;
+      padding:5px 0 0 5px;
+    }
+
+
+    @media screen and (min-width:400px) {
+      .boxs{
+        background-color: blue;
+      }
+    }
+    @media screen and (min-width:300px) and (max-width:400px) {
+      .boxs{
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <div class="menu">Home</div>
+    <div class="menu">Contacts</div>
+    <div class="menu">Projects</div>
+    <div class="menu">Services</div>
+  </div>
+
+  <div class="imageContainer">
+    <img src="./images/car2.png" alt="Car pic" height="200px" width="350px">
+  </div>
+
+  <div class="container">
+<div class="box" id="box1">box1</div>
+<div class="box" id="box2">box2</div>
+<div class="box" id="box3">box3</div>
+  </div>
+
+  <div class="boxs">
+    Green
+  </div>
+</body>
+
+</html>

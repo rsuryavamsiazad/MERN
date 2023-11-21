@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing</title>
+  <link rel="stylesheet" href="sample.css">
+  <style>
+    * {
+      background-color: black;
+      color: white;
+      font-family: cursive;
+      padding: 0;
+      margin: 0;
+    }
+
+    .text {
+      margin-top: 15px;
+      transition: 0.5s;
+    }
+
+    #t1,
+    #t2,
+    #t3 {
+      width: 100px;
+    }
+
+    #t1:hover {
+      transform: translate(35px) scale(1.5);
+    }
+
+    #t2:hover {
+      transform: translate(35px) scale(1.5);
+    }
+
+    #t3:hover {
+      transform: translate(40px) scale(1.5);
+    }
+
+    .bar {
+      border: solid white 2px;
+      height: 25px;
+      width: 500px;
+      border-radius: 13px;
+      margin: 25px;
+    }
+
+    .bar2 {
+      height: 25px;
+      width: 500px;
+      border-radius: 10px;
+      background-color: blueviolet;
+      animation: load 2s;
+    }
+
+    @keyframes load {
+      0% {
+        width: 0%;
+      }
+
+      90% {
+        width: 95%;
+      }
+
+      95% {
+        width: 70%;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p class="text" id="t1">hai</p>
+  <p class="text" id="t2">hello</p>
+  <p class="text" id="t3">how are you?</p>
+  <div class="bar">
+    <div class="bar2">
+    </div>
+  </div>
+</body>
+
+</html>

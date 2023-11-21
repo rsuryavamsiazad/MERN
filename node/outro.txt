@@ -1,0 +1,12 @@
+This is created by file writing system: 12/11/2023
+Node js is a platform which is a javascript runtime framework which is built on Google V8 Engine
+This was first introduced by Ryan Dhal in 2009.
+So we can run javascript out side the browser.
+We can use this framework on data heavy intensive server side applications.
+So now we can run the javascript also on server-side applications with out any issues
+MERN Stack is totally wirtten on javascript.
+M-Mongodb 
+E-Express js
+R-React js
+N-Node js.
+created on : Thu Nov 16 2023 19:34:33 GMT+0530 (India Standard Time)

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAY MSG</title>
+  <link rel="stylesheet" href="sample.css">
+  <style>
+    * {
+      background-color: black;
+      color: white;
+      font-family: cursive;
+      padding: 0;
+      margin: 20px;
+    }
+  </style>
+</head>
+
+<body>
+<div>
+
+</div>
+</body>
+<script>
+let box = document.querySelector('div');
+let t=new Date();
+let h=t.getHours();
+let hrs=h%12;
+let m=t.getMinutes();
+let s=t.getSeconds();
+let mrng="Good Morning",after="After Noon",night="Good Night";
+let day;
+let mark;
+if (h>=1&&h<12||h==24) {
+  day=mrng;
+  mark='am'
+} else if(h>=12&&h<=16){
+  day=after;
+  mark='pm'
+}else if(h>16&&h<=20){
+  day='Good Evening';
+  mark='pm'
+}
+else{
+  day=night;
+  mark='pm'
+}
+box.innerText=`Time:${hrs}${mark}:${m}m${s}s, ${day}`;
+</script>
+
+</html>

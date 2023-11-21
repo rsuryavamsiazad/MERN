@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* this ss css for header */
+header{
+    height: 80px;
+    width: 100  %;
+}
+header nav  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    height: 36px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+nav a {
+    text-decoration: none;
+}
+.pagenav{
+    min-width: 515px;
+    display: flex;
+    justify-content: space-between;
+}
+.sup{
+    transform: translatey(-2.5px);
+}
+.sidemenu{
+    display: flex;
+    justify-content: space-around;
+    width: 170px;
+}
+
+/* this is css for banner */
+.banner1{
+    height: 383px;
+    width: 100vw;
+    padding: 20px 0 15px 0;
+}
+.banner1 img{
+    height: 100%;
+    width: 100%;
+}
+
+/* this is css for banner1 */
+.banner2{
+    height: 37.6px;
+    width: 100vw;
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 700;
+}
+.banner2_1{
+    margin-bottom: 50px;
+}
+/* css for brands */
+.brands{
+    width: 100vw;
+    height: 307px;
+    padding: 20px 0 10px 0;
+    display: flex;
+    overflow: hidden;
+}
+.brands img{
+    height: 100%;
+}
+/* css for categories */
+.categories{
+height: 348px;
+display: flex;
+justify-content: space-evenly;
+}
+.categories img{
+    height: 100%;
+    width: 212px;
+}
+.space{
+    width: 100vw;
+    height: 100px;
+}
+/* footer section css */
+footer {
+    height: 3749.40px;
+    width: 1080px;
+    margin: 0 237.2px 0 237.2px;
+
+}
+
+.media {
+    height: 428px;
+    width: 1080px;
+
+
+}
+
+.links {
+    width: 155px;
+    height: 98%;
+    display: inline-block;
+    vertical-align: top;
+
+    /* display: flex;
+    flex-direction: column;
+   justify-content: space-between ; */
+}
+
+.mediaHead1,
+.mediaHead3,
+.mediaHead4 {
+    margin: 12px 0;
+    font-weight: 700;
+}
+
+.mediaHead2 {
+    margin-bottom: 12px;
+    margin-top: 19px;
+}
+
+.links a {
+    text-decoration: none;
+    text-transform: capitalize;
+    height: 19px;
+    font-size: 15px;
+    display: block;
+    padding-bottom: 5px;
+    color: #696b79;
+}
+
+.blog {
+    padding-top: 14px;
+}
+
+.links p {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.mediaExperience {
+    height: 163.20px;
+    width: 325px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-right: 10px;
+
+}
+
+.appstore {
+    width: 122.825px;
+    height: 42px;
+    margin-right: 10px;
+}
+
+.playstore {
+    margin-right: 10px;
+    width: 139.825px;
+    height: 42px;
+}
+
+.keepIn {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 20px 0px 10px 0px;
+}
+
+.mediaExperienceicons {
+    height: 20px;
+    margin-right: 15px;
+}
+
+.promsies {
+    float: right;
+    width: 380px;
+    height: 158.20px;
+    padding-right: 30px;
+}
+
+.promise1,
+.promise2 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.promise1 p {
+    display: inline;
+    width: 225px;
+}
+
+.promise2 p {
+    width: 185px;
+    display: inline;
+}
+
+.promise1 img {
+    height: 40px;
+    width: 48px;
+    margin-right: 15px;
+
+}
+
+.promise2 img {
+    margin-right: 15px;
+    height: 40px;
+    width: 48px;
+}
+
+
+/* 2nd section in footer */
+.popular {
+    height: 121px;
+    width: 1039.2px;
+    background-color: azure;
+}
+
+.popular hr {
+    height: 1px;
+    width: 910px;
+    float: right;
+    background-color: #eaeaec;
+    border: 1px;
+}
+
+.popular p {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    transform: translatey(-7.5px);
+}
+
+.searches {
+    height: 105px;
+    width: 1050px;
+    padding-top: 30px;
+    
+
+}
+
+.searches a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    color: #696b79;
+}
+.concern{
+    width: 1080px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: #696b79;
+}
+.concern p a{
+text-decoration: none;
+font-weight: 700;
+}
+
+.ofcAddress{
+    height: 180px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    display: flex;
+    color: #696b79;
+    font-style: normal;
+
+}
+
+.ofcAddress hr{
+    color: black;
+    height: 5px;
+}
+.flied1{
+    width: 65%;
+}
+.flied1 b{
+    color: black;
+}
+.flied2{
+    align-self: self-end;
+    padding-bottom: 10px;
+}
+.flied2 a{
+    text-decoration: none;
+    font-weight: 700;
+}
+.line{
+    height: 1px;
+    width: 1050px;
+    transform: translate(15px);
+    background-color: #eaeaec;
+    border: 1px;
+}
+.note1{
+   margin-top: 30px; 
+   font-size: 14px;
+   display: block;
+   margin-bottom: -10px;
+   font-weight: 700 ;
+   
+}
+.note2{
+    margin-top: 30px; 
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.footnote p{
+    font-size: 15px;
+    color: #696b79;
+    margin: 14px 0;
+}
+
+.orlist {
+    padding-left:60px ;
+    margin: 14px 0;
+}
+.orlist2 {
+    padding-left:60px ;
+    margin: 14px 0;
+}
+.orlist2 li{
+   margin-bottom: 15px;
+}
