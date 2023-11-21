@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    height: 50vh;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.253);
+    display: flex;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.05),
+        -5px -5px 5px rgba(255, 255, 255, 0.5);
+
+    
+}
+
+.box .location {
+    width: 25vw;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+        inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+        5px 5px 5px rgba(0, 0, 0, 0.05),
+        -5px -5px 5px rgba(255, 255, 255, 0.5);
+}
+
+
+
+/*.c-box{
+    width: 25vw;
+    border: solid rgb(88, 222, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-circle{
+    border: solid 10px;
+    height: 75%;
+    width: 75%;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.c-circle div{
+   height: 10px;
+   width: 100px;
+   background-color: blue;
+   transform-origin: 100%;
+}
+.hour{
+    transform: rotate(90deg);
+}
+.mins{
+    transform: rotate(180deg);
+}
+.sec{
+    transform: rotate(270deg);
+}*/
