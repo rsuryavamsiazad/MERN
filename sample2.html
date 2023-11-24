@@ -19,23 +19,36 @@
             height: 250px;
             width: 250px;
             border: solid;
+            /* border-radius: 50%; */
+            
         }
         .c-circle{
+            margin: 25px;
             height: 200px;
             width: 200px;
             border: solid;
-            margin: 25px;
             border-radius: 100px;
             position: relative;
+            transform: translateY(-3px);
+
         }
         .c-circle div{
-            position: absolute;
-            height: 10px;
-            width: 90px;
+            /* position: absolute;
+            height: 6px;
+            width: 50%;
             border: solid;
-            top: 95px;
+            top: 50%;
+            transform-origin: 100%;
+            transform: rotate(90deg); */
+            width: 50%;
+            height: 6px;
+            background: black;
+            position: absolute;
+            top: 50%;
             transform-origin: 100%;
             transform: rotate(90deg);
+            transition: all 0.05s;
+            transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
         }
     </style>
 </head>
