@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0; margin: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .c-box{
+            height: 250px;
+            width: 250px;
+            border: solid;
+            /* border-radius: 50%; */
+            
+        }
+        .c-circle{
+            margin: 25px;
+            height: 200px;
+            width: 200px;
+            border: solid;
+            border-radius: 100px;
+            position: relative;
+            transform: translateY(-3px);
+
+        }
+        .c-circle div{
+            /* position: absolute;
+            height: 6px;
+            width: 50%;
+            border: solid;
+            top: 50%;
+            transform-origin: 100%;
+            transform: rotate(90deg); */
+            width: 50%;
+            height: 6px;
+            background: black;
+            position: absolute;
+            top: 50%;
+            transform-origin: 100%;
+            transform: rotate(90deg);
+            transition: all 0.05s;
+            transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="c-box">
+        <div class="c-circle">
+            <div class="hour"></div>
+            <div class="mins"></div>
+            <div class="sec"></div>
+        </div>
+    </div>
+</body>
+
+</html>
