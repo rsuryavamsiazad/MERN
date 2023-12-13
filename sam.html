@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: black;
+        }
+
+        #b {
+            height: 500px;
+            width: 500px;
+            border-radius: 10px;
+            background-color: rgba(94, 55, 167, 0.5);
+            transform-origin: 0%;
+            transform: skewY(350deg);
+            box-shadow: inset 0px 0px 5px 5px  rgba(0, 0, 0, 0.5),
+            0px 0px 5px 5px  rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            font-size: larger;
+            transition: all .2s ease-in-out;
+        }
+        
+        body::before{
+            content: "The skew() function is specified with either one or two values, which represent the amount of skewing to be applied in each direction. If you only specify one value it is used for the x-axis and there will be no skewing on the y-axis.";
+            position:absolute;
+            height: 45%;
+            width: 400px;
+            border-radius: 10px;
+            left:80px;
+            top: 215px;
+            padding: 10px;
+            transform: skewY(14deg);
+            font-size: larger;
+            background-color: rgba(209, 141, 51, 0.5);
+            box-shadow: inset 0px 0px 5px 5px  rgba(0, 0, 0, 0.5),
+            0px 0px 5px 5px  rgba(255, 255, 255, 0.5);
+            z-index: 1;
+        }
+        
+        body::after{
+            content: "The skew() function is specified with either one or two values, which represent the amount of skewing to be applied in each direction. If you only specify one value it is used for the x-axis and there will be no skewing on the y-axis.";
+            position:absolute;
+            height: 45%;
+            width: 400px;
+            border-radius: 10px;
+            right:80px;
+            top: 235px;
+            padding: 10px;
+            font-size: larger;
+            transform: skewY(14deg);
+            background-color: rgba(222, 184, 135, 0.5);
+            box-shadow: inset 0px 0px 5px 5px  rgba(0, 0, 0, 0.5),
+            0px 0px 5px 5px  rgba(255, 255, 255, 0.5);
+            z-index: 1;
+        }
+        #b:hover{
+            transform: skewY(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="b">
+        The skew() function is an inbuilt function which is used to transform an element in the 2D plane. Skew an element means to pick a point and push or pull it in different directions. 
+     </div>
+</body>
+</html>

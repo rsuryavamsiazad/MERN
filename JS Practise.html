@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practise</title>
+</head>
+
+<body>
+    <script>
+        // let v = '';
+        // function rot13(str) {
+        //     for (let index = 0; index < str.length; index++) {
+        //         if (str.charCodeAt(index) > 64 && str.charCodeAt(index) < 91) {
+        //             if ((str.charCodeAt(index) + 13) > 90) {
+        //                 let a = (str.charCodeAt(index) + 13) - 90;
+        //                 let b = 64 + a;
+
+        //                 v += String.fromCharCode(b)
+        //             }
+        //             else {
+        //                 v += String.fromCharCode(str.charCodeAt(index) + 13)
+        //             }
+        //         }
+        //         else {
+        //             v += str.charAt(index)
+        //         }
+        //     }
+        //     return str;
+        // }
+
+        function checkCashRegister(price, cash, cid) {
+  let change;
+  var change_arr = denom.reduce(function(acc, curr) {
+    var value = 0;
+    // While there is still money of this type in the drawer
+    // And while the denomination is larger than the change reminaing
+    while (register[curr.name] > 0 && change >= curr.val) {
+      change -= curr.val;
+      register[curr.name] -= curr.val;
+      value += curr.val;
+      // Round change to the nearest hundreth deals with precision errors
+      change = Math.round(change * 100) / 100;
+    }
+    // Add this denomination to the output only if any was used.
+    if (value > 0) {
+        acc.push([ curr.name, value ]);
+    }
+    return acc; // Return the current Change Array
+  }, []); // Initial value of empty array for reduce
+  return change;
+}
+
+checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
